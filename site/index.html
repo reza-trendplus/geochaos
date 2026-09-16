@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GeoChaos turns IP2Location country and network intelligence into controlled browser failure tests. Inspect real, reproducible demo evidence.">
+  <meta name="theme-color" content="#0b111b">
+  <meta name="referrer" content="no-referrer">
+  <title>GeoChaos - Find the dependency that breaks your checkout</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="#main" aria-label="GeoChaos home"><span class="mark" aria-hidden="true">G/</span> GeoChaos</a><nav aria-label="Main"><a href="#evidence">Demo evidence</a><a href="{{GUIDE_URL}}">Documentation</a><a class="nav-source" href="{{SOURCE_URL}}">{{SOURCE_LABEL}} <span aria-hidden="true">&#8599;</span></a></nav></header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN SOURCE / IP2LOCATION-POWERED</div>
+    <h1 id="hero-heading">Your checkout should survive<br class="wide-break"> an optional service <em>going offline.</em></h1>
+    <p class="lead">Find the hidden dependency before it becomes your next outage. Group observed browser dependencies by country or network, inject a controlled failure, and see which user journeys break.</p>
+    <div class="actions"><a class="button primary" href="#evidence">Inspect the demo <span aria-hidden="true">&#8595;</span></a><a class="button secondary" href="{{SOURCE_URL}}">{{SOURCE_LABEL}} <span aria-hidden="true">&#8599;</span></a></div>
+    <div class="hero-facts"><span>TypeScript + Playwright</span><span>MIT licensed</span><span>No-key local demo</span><span>v{{VERSION}}</span></div>
+  </section>
+  <section class="pipeline" aria-label="How the experiment works"><div><span>01</span><strong>Observe</strong><p>Capture a passing journey.</p></div><div><span>02</span><strong>Classify</strong><p>Country + ASN via IP2Location.</p></div><div><span>03</span><strong>Inject</strong><p>Abort selected browser requests.</p></div><div><span>04</span><strong>Verify</strong><p>Compare assertions and evidence.</p></div></section>
+  <section id="evidence" class="section" aria-labelledby="evidence-heading">
+    <div class="eyebrow">ONE HIDDEN DEPENDENCY / TWO OUTCOMES</div><h2 id="evidence-heading">Both work normally.<br>Only one survives the same failure.</h2>
+    <p class="section-intro">The recommendation widget is optional. The fragile checkout treats it as essential. The fixed checkout lets the order proceed without it.</p>
+    <div class="notice"><strong>Synthetic geography. Real execution.</strong> These saved v0.1.0 reports use local services and explicit country/ASN fixtures. They are actual Chromium runs, not live geolocation results. The bundled page was mounted with <code>setContent</code>; ordinary top-level navigation was not tested in these samples.</div>
+    <div class="comparison">
+      <article class="result fragile"><span class="card-label">BEFORE / FRAGILE CHECKOUT</span><h3>Optional by design.<br>Required by mistake.</h3><div class="metric"><strong>2</strong><span>regressed journey /<br>scenario pairs</span></div><p>Checkout fails in the recommendation-country and recommendation-network scenarios. The baseline passes.</p><a class="card-link" href="reports/fragile/report.html">Inspect failure evidence <span aria-hidden="true">&#8594;</span></a></article>
+      <article class="result resilient"><span class="card-label">AFTER / RESILIENT CHECKOUT</span><h3>Graceful degradation.<br>Checkout stays independent.</h3><div class="metric"><strong>0</strong><span>regressed journey /<br>scenario pairs</span></div><p>The same two journeys pass all eight journey/scenario pairs after the recommendation service is made optional.</p><a class="card-link" href="reports/resilient/report.html">Inspect the fixed application <span aria-hidden="true">&#8594;</span></a></article>
+    </div>
+    <a class="report-preview" href="reports/fragile/report.html" aria-label="Open the full interactive fragile report"><img src="assets/report-preview.png" width="1440" height="1050" loading="lazy" alt="GeoChaos report showing the baseline gate, coverage warnings, and journey-by-scenario results."></a>
+    <p class="caption">Self-contained reports with exact target origins, functional assertions, screenshots, and explicit coverage warnings.</p>
+  </section>
+  <section class="section split" aria-labelledby="start-heading"><div><div class="eyebrow">TRY IT LOCALLY</div><h2 id="start-heading">A reproducible experiment,<br>not another IP map.</h2><p>Use Node.js 22 or newer. Download or clone the source repository, then run the commands shown. The local demo requires no API key. Live country/ASN enrichment uses your own IP2Location.io credentials.</p><a class="text-link" href="{{GUIDE_URL}}">Read the complete setup guide <span aria-hidden="true">&#8594;</span></a></div><div class="terminal"><div class="terminal-top">TERMINAL / INSIDE THE REPOSITORY</div><pre><code>npm run setup
+npm run browser:install
+npm run check
+npm run demo</code></pre><div class="terminal-foot">Open the comparison report printed by the demo.</div></div></section>
+  <section class="scope" aria-labelledby="scope-heading"><div class="eyebrow">READ THE RESULTS PRECISELY</div><h2 id="scope-heading">Tested dependencies. Not an entire country.</h2><p>Geolocation labels select exact origins observed during the baseline. CDN edges, anycast, and DNS changes limit interpretation. GeoChaos does not reproduce national internet outages, inspect hidden backend calls, or prove total application resilience. A passing result applies only to the assertions and scope actually tested.</p><a class="text-link" href="{{VERIFICATION_URL}}">Verification record and remaining release checks <span aria-hidden="true">&#8594;</span></a></section>
+</main>
+<footer><div><a class="brand" href="#main">GeoChaos</a><p>Vibe coded with ChatGPT Pro 6.</p><a href="{{CREDITS_URL}}">AI-development disclosure and maintainer responsibility</a></div><div><a href="https://www.ip2location.io/">IP Geolocation by IP2Location.io</a><p>Live integration powers the scenario grouping.<br>Demo labels are synthetic. No affiliation or endorsement is implied.</p><a href="https://contest.ip2location.com/">IP2Location Programming Contest 2026</a></div></footer>
+</body>
+</html>

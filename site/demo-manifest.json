@@ -1,0 +1,129 @@
+{
+  "description": "Historical v0.1.0 synthetic inline-mode demo; do not replace with private run output.",
+  "samples": [
+    {
+      "name": "fragile",
+      "source": "sample-reports/fragile/2026-09-16T11-42-36-835Z-a8151055",
+      "files": [
+        {
+          "path": "report.html",
+          "sha256": "ae76d3fae4ab2e78f14ded9b1583903182fde8ceb299fc609f0f7c42fbfb621e"
+        },
+        {
+          "path": "report.json",
+          "sha256": "916b6637cc5ec94277922466501630786dd398e1faab7e7088c2c7b92f2d804a"
+        },
+        {
+          "path": "screenshots/asn-64501-59a79575.png",
+          "sha256": "f4d04a39a89a517ef478bf106c2b1d133502995dc4ac9181e62633b9410ef166"
+        },
+        {
+          "path": "screenshots/asn-64501-9e40e8d0.png",
+          "sha256": "4bd07e1584dff129fe38d016652a3a4b7679c85b38c08ef0181ca79ae2a3babc"
+        },
+        {
+          "path": "screenshots/asn-64502-2d2b0eac.png",
+          "sha256": "349a48a75152919919abbb0c8fac55ba1709520e0117af3edaf8feda2dda52f3"
+        },
+        {
+          "path": "screenshots/asn-64502-a4db399b.png",
+          "sha256": "d3aa735d7d1d77635ca913d85384acbfcd3276fff9766adb42d67aaebf3a3429"
+        },
+        {
+          "path": "screenshots/baseline-0780b626.png",
+          "sha256": "349a48a75152919919abbb0c8fac55ba1709520e0117af3edaf8feda2dda52f3"
+        },
+        {
+          "path": "screenshots/baseline-6c75b8dd.png",
+          "sha256": "d3aa735d7d1d77635ca913d85384acbfcd3276fff9766adb42d67aaebf3a3429"
+        },
+        {
+          "path": "screenshots/baseline-851fea5c.png",
+          "sha256": "d3aa735d7d1d77635ca913d85384acbfcd3276fff9766adb42d67aaebf3a3429"
+        },
+        {
+          "path": "screenshots/baseline-eb8f6e5d.png",
+          "sha256": "349a48a75152919919abbb0c8fac55ba1709520e0117af3edaf8feda2dda52f3"
+        },
+        {
+          "path": "screenshots/country-DE-6f5530e1.png",
+          "sha256": "4bd07e1584dff129fe38d016652a3a4b7679c85b38c08ef0181ca79ae2a3babc"
+        },
+        {
+          "path": "screenshots/country-DE-fce3ab7e.png",
+          "sha256": "f4d04a39a89a517ef478bf106c2b1d133502995dc4ac9181e62633b9410ef166"
+        },
+        {
+          "path": "screenshots/country-NL-8a52e8b7.png",
+          "sha256": "349a48a75152919919abbb0c8fac55ba1709520e0117af3edaf8feda2dda52f3"
+        },
+        {
+          "path": "screenshots/country-NL-b6c1b1e7.png",
+          "sha256": "d3aa735d7d1d77635ca913d85384acbfcd3276fff9766adb42d67aaebf3a3429"
+        }
+      ]
+    },
+    {
+      "name": "resilient",
+      "source": "sample-reports/resilient/2026-09-16T11-42-43-055Z-39a737c3",
+      "files": [
+        {
+          "path": "report.html",
+          "sha256": "4cd8f465b1018fccff20e8e85824f9149a8fd3200aa58b41c01543dc8ac2fbbb"
+        },
+        {
+          "path": "report.json",
+          "sha256": "daa1de0f550fc6ec25a650f1e3a21ee3f0bdee9a6ca282532b3fdee6851b612f"
+        },
+        {
+          "path": "screenshots/asn-64501-6e2811d6.png",
+          "sha256": "228807eca5cdfe1ed0eee30217a36d8d47a428c7990aad72f8d8383e2688129f"
+        },
+        {
+          "path": "screenshots/asn-64501-7a6cf949.png",
+          "sha256": "3ee37c61e8f0857a261f8ac645e53ff6dcaafb9b219bd6baf19a7d3dbb431650"
+        },
+        {
+          "path": "screenshots/asn-64502-ae893626.png",
+          "sha256": "72c419daf8f68ea4e69378d7477bb5e5dd803c70bbb5c8674fc610904ff3e0cc"
+        },
+        {
+          "path": "screenshots/asn-64502-d76e8f09.png",
+          "sha256": "5a295faae8f3f0f02270607161a5866e73f111501592d7632ccc81660682e40d"
+        },
+        {
+          "path": "screenshots/baseline-62c825b8.png",
+          "sha256": "5a295faae8f3f0f02270607161a5866e73f111501592d7632ccc81660682e40d"
+        },
+        {
+          "path": "screenshots/baseline-a2bad84d.png",
+          "sha256": "72c419daf8f68ea4e69378d7477bb5e5dd803c70bbb5c8674fc610904ff3e0cc"
+        },
+        {
+          "path": "screenshots/baseline-debd98f5.png",
+          "sha256": "72c419daf8f68ea4e69378d7477bb5e5dd803c70bbb5c8674fc610904ff3e0cc"
+        },
+        {
+          "path": "screenshots/baseline-e22b4487.png",
+          "sha256": "5a295faae8f3f0f02270607161a5866e73f111501592d7632ccc81660682e40d"
+        },
+        {
+          "path": "screenshots/country-DE-7d07593e.png",
+          "sha256": "228807eca5cdfe1ed0eee30217a36d8d47a428c7990aad72f8d8383e2688129f"
+        },
+        {
+          "path": "screenshots/country-DE-cf357b5c.png",
+          "sha256": "3ee37c61e8f0857a261f8ac645e53ff6dcaafb9b219bd6baf19a7d3dbb431650"
+        },
+        {
+          "path": "screenshots/country-NL-0389956b.png",
+          "sha256": "72c419daf8f68ea4e69378d7477bb5e5dd803c70bbb5c8674fc610904ff3e0cc"
+        },
+        {
+          "path": "screenshots/country-NL-f7836d31.png",
+          "sha256": "5a295faae8f3f0f02270607161a5866e73f111501592d7632ccc81660682e40d"
+        }
+      ]
+    }
+  ]
+}

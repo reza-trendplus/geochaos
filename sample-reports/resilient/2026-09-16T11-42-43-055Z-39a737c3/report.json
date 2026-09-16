@@ -1,0 +1,968 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "runId": "2026-09-16T11-42-43-055Z-39a737c3",
+  "name": "Northstar / resilient checkout",
+  "mode": "synthetic",
+  "appOrigin": "http://127.0.0.1:45189",
+  "startedAt": "2026-09-16T11:42:43.055Z",
+  "finishedAt": "2026-09-16T11:42:46.998Z",
+  "durationMs": 3943,
+  "environment": {
+    "node": "v22.16.0",
+    "browser": "144.0.7559.96"
+  },
+  "settings": {
+    "groupBy": [
+      "country",
+      "asn"
+    ],
+    "baselineRuns": 2,
+    "scenarioRuns": 1,
+    "serviceWorkers": "blocked",
+    "httpCache": "disabled",
+    "diagnostics": true,
+    "protectedOrigins": [
+      "http://127.0.0.1:45189"
+    ],
+    "excludedOrigins": []
+  },
+  "warnings": [
+    "INLINE DEMO: the bundled application document was mounted with Playwright setContent, not navigated. Dependency HTTP requests, observed IPs and failure interception are real. Top-level navigation was not tested.",
+    "SYNTHETIC DEMO: country and ASN labels are assigned fixtures, not live geolocation. Observed browser IPs remain unchanged."
+  ],
+  "baseline": [
+    {
+      "id": "baseline-62c825b8",
+      "journey": "Complete checkout",
+      "phase": "baseline",
+      "scenarioId": null,
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 426,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 91
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 47
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 46
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 0,
+      "diagnostics": [],
+      "warnings": [],
+      "screenshot": "screenshots/baseline-62c825b8.png"
+    },
+    {
+      "id": "baseline-a2bad84d",
+      "journey": "Browse catalog",
+      "phase": "baseline",
+      "scenarioId": null,
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 249,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 45
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 9
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 0,
+      "diagnostics": [],
+      "warnings": [],
+      "screenshot": "screenshots/baseline-a2bad84d.png"
+    },
+    {
+      "id": "baseline-e22b4487",
+      "journey": "Complete checkout",
+      "phase": "baseline",
+      "scenarioId": null,
+      "attempt": 2,
+      "status": "passed",
+      "durationMs": 372,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 62
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 50
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 49
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 0,
+      "diagnostics": [],
+      "warnings": [],
+      "screenshot": "screenshots/baseline-e22b4487.png"
+    },
+    {
+      "id": "baseline-debd98f5",
+      "journey": "Browse catalog",
+      "phase": "baseline",
+      "scenarioId": null,
+      "attempt": 2,
+      "status": "passed",
+      "durationMs": 259,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 53
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 13
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 0,
+      "diagnostics": [],
+      "warnings": [],
+      "screenshot": "screenshots/baseline-debd98f5.png"
+    }
+  ],
+  "dependencies": [
+    {
+      "origin": "http://127.0.0.1:36643",
+      "ips": [
+        "127.0.0.1"
+      ],
+      "requests": 4,
+      "responses": 4,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "resourceTypes": [
+        "fetch"
+      ],
+      "httpErrors": [],
+      "addressMisses": 0,
+      "journeys": [
+        "Complete checkout",
+        "Browse catalog"
+      ],
+      "geo": [
+        {
+          "ip": "127.0.0.1",
+          "countryCode": "DE",
+          "asn": "64501",
+          "countryName": "Germany (synthetic)",
+          "asName": "Demo Recommendations Network",
+          "source": "synthetic",
+          "status": "ok"
+        }
+      ],
+      "excluded": null,
+      "country": {
+        "state": "known",
+        "values": [
+          "DE"
+        ]
+      },
+      "asn": {
+        "state": "known",
+        "values": [
+          "64501"
+        ]
+      }
+    },
+    {
+      "origin": "http://127.0.0.1:40963",
+      "ips": [
+        "127.0.0.1"
+      ],
+      "requests": 4,
+      "responses": 4,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "resourceTypes": [
+        "image"
+      ],
+      "httpErrors": [],
+      "addressMisses": 0,
+      "journeys": [
+        "Complete checkout",
+        "Browse catalog"
+      ],
+      "geo": [
+        {
+          "ip": "127.0.0.1",
+          "countryCode": "NL",
+          "asn": "64502",
+          "countryName": "Netherlands (synthetic)",
+          "asName": "Demo Analytics Network",
+          "source": "synthetic",
+          "status": "ok"
+        }
+      ],
+      "excluded": null,
+      "country": {
+        "state": "known",
+        "values": [
+          "NL"
+        ]
+      },
+      "asn": {
+        "state": "known",
+        "values": [
+          "64502"
+        ]
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "country-DE",
+      "groupBy": "country",
+      "value": "DE",
+      "name": "Reported country DE unavailable",
+      "origins": [
+        "http://127.0.0.1:36643"
+      ]
+    },
+    {
+      "id": "country-NL",
+      "groupBy": "country",
+      "value": "NL",
+      "name": "Reported country NL unavailable",
+      "origins": [
+        "http://127.0.0.1:40963"
+      ]
+    },
+    {
+      "id": "asn-64501",
+      "groupBy": "asn",
+      "value": "64501",
+      "name": "Network AS64501 unavailable",
+      "origins": [
+        "http://127.0.0.1:36643"
+      ]
+    },
+    {
+      "id": "asn-64502",
+      "groupBy": "asn",
+      "value": "64502",
+      "name": "Network AS64502 unavailable",
+      "origins": [
+        "http://127.0.0.1:40963"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "country-DE-cf357b5c",
+      "journey": "Complete checkout",
+      "phase": "scenario",
+      "scenarioId": "country-DE",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 304,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 53
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 34
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 32
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED",
+        "error: Recommendation service unavailable"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/country-DE-cf357b5c.png"
+    },
+    {
+      "id": "country-DE-7d07593e",
+      "journey": "Browse catalog",
+      "phase": "scenario",
+      "scenarioId": "country-DE",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 265,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 49
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 11
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED",
+        "error: Recommendation service unavailable"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/country-DE-7d07593e.png"
+    },
+    {
+      "id": "country-NL-f7836d31",
+      "journey": "Complete checkout",
+      "phase": "scenario",
+      "scenarioId": "country-NL",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 316,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 48
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 43
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 34
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/country-NL-f7836d31.png"
+    },
+    {
+      "id": "country-NL-0389956b",
+      "journey": "Browse catalog",
+      "phase": "scenario",
+      "scenarioId": "country-NL",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 271,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 49
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 10
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/country-NL-0389956b.png"
+    },
+    {
+      "id": "asn-64501-7a6cf949",
+      "journey": "Complete checkout",
+      "phase": "scenario",
+      "scenarioId": "asn-64501",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 356,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 49
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 40
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 51
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED",
+        "error: Recommendation service unavailable"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/asn-64501-7a6cf949.png"
+    },
+    {
+      "id": "asn-64501-6e2811d6",
+      "journey": "Browse catalog",
+      "phase": "scenario",
+      "scenarioId": "asn-64501",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 273,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 50
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 14
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED",
+        "error: Recommendation service unavailable"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/asn-64501-6e2811d6.png"
+    },
+    {
+      "id": "asn-64502-d76e8f09",
+      "journey": "Complete checkout",
+      "phase": "scenario",
+      "scenarioId": "asn-64502",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 339,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 48
+        },
+        {
+          "name": "Add to cart",
+          "status": "passed",
+          "durationMs": 43
+        },
+        {
+          "name": "Confirm order",
+          "status": "passed",
+          "durationMs": 50
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/asn-64502-d76e8f09.png"
+    },
+    {
+      "id": "asn-64502-ae893626",
+      "journey": "Browse catalog",
+      "phase": "scenario",
+      "scenarioId": "asn-64502",
+      "attempt": 1,
+      "status": "passed",
+      "durationMs": 264,
+      "steps": [
+        {
+          "name": "Open product",
+          "status": "passed",
+          "durationMs": 43
+        },
+        {
+          "name": "Find a product",
+          "status": "passed",
+          "durationMs": 9
+        }
+      ],
+      "origins": [
+        {
+          "origin": "http://127.0.0.1:36643",
+          "ips": [
+            "127.0.0.1"
+          ],
+          "requests": 1,
+          "responses": 1,
+          "failedRequests": 0,
+          "blockedRequests": 0,
+          "resourceTypes": [
+            "fetch"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        },
+        {
+          "origin": "http://127.0.0.1:40963",
+          "ips": [],
+          "requests": 1,
+          "responses": 0,
+          "failedRequests": 1,
+          "blockedRequests": 1,
+          "resourceTypes": [
+            "image"
+          ],
+          "httpErrors": [],
+          "addressMisses": 0
+        }
+      ],
+      "blockedRequests": 1,
+      "diagnostics": [
+        "error: Failed to load resource: net::ERR_FAILED"
+      ],
+      "warnings": [],
+      "screenshot": "screenshots/asn-64502-ae893626.png"
+    }
+  ],
+  "matrix": [
+    {
+      "journey": "Complete checkout",
+      "scenarioId": "country-DE",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "country-DE-cf357b5c"
+      ]
+    },
+    {
+      "journey": "Browse catalog",
+      "scenarioId": "country-DE",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "country-DE-7d07593e"
+      ]
+    },
+    {
+      "journey": "Complete checkout",
+      "scenarioId": "country-NL",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "country-NL-f7836d31"
+      ]
+    },
+    {
+      "journey": "Browse catalog",
+      "scenarioId": "country-NL",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "country-NL-0389956b"
+      ]
+    },
+    {
+      "journey": "Complete checkout",
+      "scenarioId": "asn-64501",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "asn-64501-7a6cf949"
+      ]
+    },
+    {
+      "journey": "Browse catalog",
+      "scenarioId": "asn-64501",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "asn-64501-6e2811d6"
+      ]
+    },
+    {
+      "journey": "Complete checkout",
+      "scenarioId": "asn-64502",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "asn-64502-d76e8f09"
+      ]
+    },
+    {
+      "journey": "Browse catalog",
+      "scenarioId": "asn-64502",
+      "status": "passed",
+      "blockedRequests": 1,
+      "runIds": [
+        "asn-64502-ae893626"
+      ]
+    }
+  ],
+  "summary": {
+    "outcome": "passed",
+    "exitCode": 0,
+    "baselinePassed": true,
+    "regressions": 0,
+    "passedCells": 8,
+    "inconclusiveCells": 0,
+    "notApplicableCells": 0,
+    "dependencyCount": 2,
+    "classifiedCount": 2,
+    "completeCoverage": true
+  }
+}

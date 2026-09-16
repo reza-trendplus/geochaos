@@ -1,0 +1,71 @@
+{
+  "name": "geochaos",
+  "version": "0.1.1",
+  "description": "Find the browser journeys that break when geographically grouped dependencies go offline. Powered by IP2Location.io.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "geochaos": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "CREDITS.md",
+    "CHANGELOG.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CONFIGURATION.md"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "demo": "npm run build && node dist/cli.js demo",
+    "browser:install": "playwright-core install chromium",
+    "test": "npm run build && node --test test/unit/*.test.mjs",
+    "test:e2e": "npm run build && node --test --test-concurrency=1 test/e2e/*.test.mjs",
+    "check": "npm test && npm run test:e2e",
+    "prepack": "npm run build",
+    "site:build": "node scripts/build-site.mjs",
+    "release:check": "node scripts/release-check.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "1.57.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.33",
+    "typescript": "5.8.3"
+  },
+  "keywords": [
+    "ip2location",
+    "chaos-engineering",
+    "resilience-testing",
+    "playwright",
+    "geolocation",
+    "typescript",
+    "browser-testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reza-trendplus/geochaos.git"
+  },
+  "homepage": "https://reza-trendplus.github.io/geochaos/",
+  "bugs": {
+    "url": "https://github.com/reza-trendplus/geochaos/issues"
+  },
+  "geochaos": {
+    "repository": "reza-trendplus/geochaos"
+  }
+}

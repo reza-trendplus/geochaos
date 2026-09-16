@@ -1,0 +1,424 @@
+
+> geochaos@0.1.0 check
+> npm test && npm run test:e2e
+
+
+> geochaos@0.1.0 test
+> npm run build && node --test test/unit/*.test.mjs
+
+
+> geochaos@0.1.0 build
+> tsc -p tsconfig.json
+
+TAP version 13
+# Subtest: IPv4 / IPv6 normalization, compressed form and mapped addresses
+ok 1 - IPv4 / IPv6 normalization, compressed form and mapped addresses
+  ---
+  duration_ms: 6.423733
+  type: 'test'
+  ...
+# Subtest: Malformed IPs are rejected
+ok 2 - Malformed IPs are rejected
+  ---
+  duration_ms: 0.224101
+  type: 'test'
+  ...
+# Subtest: Private, loopback, documentation and transition addresses are not sent to the API
+ok 3 - Private, loopback, documentation and transition addresses are not sent to the API
+  ---
+  duration_ms: 0.544764
+  type: 'test'
+  ...
+# Subtest: Public addresses are eligible, including IPv4-mapped IPv6
+ok 4 - Public addresses are eligible, including IPv4-mapped IPv6
+  ---
+  duration_ms: 1.210066
+  type: 'test'
+  ...
+# Subtest: Only HTTP(S) origins are collected; paths and credentials are stripped
+ok 5 - Only HTTP(S) origins are collected; paths and credentials are stripped
+  ---
+  duration_ms: 0.216369
+  type: 'test'
+  ...
+# Subtest: Safe defaults protect the application origin and repeat the baseline
+ok 6 - Safe defaults protect the application origin and repeat the baseline
+  ---
+  duration_ms: 1.175506
+  type: 'test'
+  ...
+# Subtest: Origin exclusions are exact, canonical and reject path-level mistakes
+ok 7 - Origin exclusions are exact, canonical and reject path-level mistakes
+  ---
+  duration_ms: 0.363217
+  type: 'test'
+  ...
+# Subtest: Config rejects misspelled, invalid and ambiguous options
+ok 8 - Config rejects misspelled, invalid and ambiguous options
+  ---
+  duration_ms: 0.499678
+  type: 'test'
+  ...
+# Subtest: Config requires meaningful named steps and unique journey names
+ok 9 - Config requires meaningful named steps and unique journey names
+  ---
+  duration_ms: 0.417677
+  type: 'test'
+  ...
+# Subtest: Country and ASN filters are validated and normalized
+ok 10 - Country and ASN filters are validated and normalized
+  ---
+  duration_ms: 0.654877
+  type: 'test'
+  ...
+# Subtest: Synthetic labels must be explicit and must be valid
+ok 11 - Synthetic labels must be explicit and must be valid
+  ---
+  duration_ms: 0.277429
+  type: 'test'
+  ...
+# Subtest: Normalization is idempotent for the public library API
+ok 12 - Normalization is idempotent for the public library API
+  ---
+  duration_ms: 0.280925
+  type: 'test'
+  ...
+# Subtest: Classification distinguishes known, mixed, partial and unknown
+ok 13 - Classification distinguishes known, mixed, partial and unknown
+  ---
+  duration_ms: 1.362401
+  type: 'test'
+  ...
+# Subtest: Scenario targets are deterministic and protect first-party/user-excluded origins
+ok 14 - Scenario targets are deterministic and protect first-party/user-excluded origins
+  ---
+  duration_ms: 0.843445
+  type: 'test'
+  ...
+# Subtest: A mixed country does not prevent a consistently known ASN scenario
+ok 15 - A mixed country does not prevent a consistently known ASN scenario
+  ---
+  duration_ms: 0.221086
+  type: 'test'
+  ...
+# Subtest: Partial labels never enter automatic scenarios for that axis
+ok 16 - Partial labels never enter automatic scenarios for that axis
+  ---
+  duration_ms: 0.303258
+  type: 'test'
+  ...
+# Subtest: Filters choose only requested groups and report unmatched values
+ok 17 - Filters choose only requested groups and report unmatched values
+  ---
+  duration_ms: 0.408102
+  type: 'test'
+  ...
+# Subtest: Scenario cap is explicit and makes coverage incomplete
+ok 18 - Scenario cap is explicit and makes coverage incomplete
+  ---
+  duration_ms: 6.839357
+  type: 'test'
+  ...
+# Subtest: No dependencies never yields an all-clear plan
+ok 19 - No dependencies never yields an all-clear plan
+  ---
+  duration_ms: 1.350174
+  type: 'test'
+  ...
+# Subtest: Enrichment deduplicates observed addresses, protects first party, and keeps actual IPs
+ok 20 - Enrichment deduplicates observed addresses, protects first party, and keeps actual IPs
+  ---
+  duration_ms: 0.919097
+  type: 'test'
+  ...
+# Subtest: Synthetic enrichment never replaces observed IPs with invented geographic addresses
+ok 21 - Synthetic enrichment never replaces observed IPs with invented geographic addresses
+  ---
+  duration_ms: 0.951925
+  type: 'test'
+  ...
+# Subtest: Repeated contradictory scenario outcomes are inconclusive, not a stable regression
+ok 22 - Repeated contradictory scenario outcomes are inconclusive, not a stable regression
+  ---
+  duration_ms: 0.59626
+  type: 'test'
+  ...
+# Subtest: Unexecuted relevant scenarios are inconclusive; genuinely unrelated journeys are N/A
+ok 23 - Unexecuted relevant scenarios are inconclusive; genuinely unrelated journeys are N/A
+  ---
+  duration_ms: 0.249809
+  type: 'test'
+  ...
+# Subtest: Exit codes distinguish regressions, complete passing evidence, and partial evidence
+ok 24 - Exit codes distinguish regressions, complete passing evidence, and partial evidence
+  ---
+  duration_ms: 0.253524
+  type: 'test'
+  ...
+# Subtest: Live lookups require a key or an explicit keyless opt-in
+ok 25 - Live lookups require a key or an explicit keyless opt-in
+  ---
+  duration_ms: 1.132462
+  type: 'test'
+  ...
+# Subtest: API uses HTTPS, Bearer auth, and never puts the key in the URL
+ok 26 - API uses HTTPS, Bearer auth, and never puts the key in the URL
+  ---
+  duration_ms: 21.283832
+  type: 'test'
+  ...
+# Subtest: Concurrent duplicate and mapped-IP lookups share one in-memory request
+ok 27 - Concurrent duplicate and mapped-IP lookups share one in-memory request
+  ---
+  duration_ms: 10.628922
+  type: 'test'
+  ...
+# Subtest: Private, special-use and invalid IPs never produce API requests
+ok 28 - Private, special-use and invalid IPs never produce API requests
+  ---
+  duration_ms: 1.292408
+  type: 'test'
+  ...
+# Subtest: Unique-IP budget is enforced without treating unlooked-up IPs as known
+ok 29 - Unique-IP budget is enforced without treating unlooked-up IPs as known
+  ---
+  duration_ms: 0.599055
+  type: 'test'
+  ...
+# Subtest: Transient service failure gets one bounded retry
+ok 30 - Transient service failure gets one bounded retry
+  ---
+  duration_ms: 251.489505
+  type: 'test'
+  ...
+# Subtest: Rate limiting stops after one retry and prevents later unique-IP requests
+ok 31 - Rate limiting stops after one retry and prevents later unique-IP requests
+  ---
+  duration_ms: 251.788908
+  type: 'test'
+  ...
+# Subtest: Authentication errors disable further lookups and never echo provider content
+ok 32 - Authentication errors disable further lookups and never echo provider content
+  ---
+  duration_ms: 0.542641
+  type: 'test'
+  ...
+# Subtest: Mismatched response IP is an error, not silently accepted
+ok 33 - Mismatched response IP is an error, not silently accepted
+  ---
+  duration_ms: 0.985485
+  type: 'test'
+  ...
+# Subtest: Equivalent IPv6 response spellings are accepted
+ok 34 - Equivalent IPv6 response spellings are accepted
+  ---
+  duration_ms: 0.783477
+  type: 'test'
+  ...
+# Subtest: Country and ASN coverage are independent
+ok 35 - Country and ASN coverage are independent
+  ---
+  duration_ms: 0.47372
+  type: 'test'
+  ...
+# Subtest: Malformed JSON and provider error payloads yield safe unknown/error records
+ok 36 - Malformed JSON and provider error payloads yield safe unknown/error records
+  ---
+  duration_ms: 1.446946
+  type: 'test'
+  ...
+# Subtest: Thrown fetch errors do not leak secrets or stack traces
+ok 37 - Thrown fetch errors do not leak secrets or stack traces
+  ---
+  duration_ms: 0.218743
+  type: 'test'
+  ...
+# Subtest: A pre-cancelled lookup does not hit the network
+ok 38 - A pre-cancelled lookup does not hit the network
+  ---
+  duration_ms: 0.152055
+  type: 'test'
+  ...
+# Subtest: Concurrency-limited mapper preserves input order and the concurrency bound
+ok 39 - Concurrency-limited mapper preserves input order and the concurrency bound
+  ---
+  duration_ms: 15.693048
+  type: 'test'
+  ...
+# Subtest: Provider requests respect their timeout and do not retry indefinitely
+ok 40 - Provider requests respect their timeout and do not retry indefinitely
+  ---
+  duration_ms: 60.515511
+  type: 'test'
+  ...
+# Subtest: Redaction removes exact secrets, bearer tokens, emails and URL paths/queries
+ok 41 - Redaction removes exact secrets, bearer tokens, emails and URL paths/queries
+  ---
+  duration_ms: 1.399496
+  type: 'test'
+  ...
+# Subtest: Redaction strips terminal controls and bounds output size
+ok 42 - Redaction strips terminal controls and bounds output size
+  ---
+  duration_ms: 0.234967
+  type: 'test'
+  ...
+# Subtest: HTML escaping includes attribute quotes
+ok 43 - HTML escaping includes attribute quotes
+  ---
+  duration_ms: 0.154197
+  type: 'test'
+  ...
+# Subtest: Report escapes untrusted metadata and includes a restrictive valid script hash
+ok 44 - Report escapes untrusted metadata and includes a restrictive valid script hash
+  ---
+  duration_ms: 2.48634
+  type: 'test'
+  ...
+# Subtest: Report HTML has no remote asset URLs or insecure raw JSON script payload
+ok 45 - Report HTML has no remote asset URLs or insecure raw JSON script payload
+  ---
+  duration_ms: 0.454591
+  type: 'test'
+  ...
+# Subtest: Step deadlines reject hanging promises
+ok 46 - Step deadlines reject hanging promises
+  ---
+  duration_ms: 40.836638
+  type: 'test'
+  ...
+# Subtest: Step deadlines propagate cancellation and clean up successful timers
+ok 47 - Step deadlines propagate cancellation and clean up successful timers
+  ---
+  duration_ms: 10.616081
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 686.989311
+
+> geochaos@0.1.0 test:e2e
+> npm run build && node --test --test-concurrency=1 test/e2e/*.test.mjs
+
+
+> geochaos@0.1.0 build
+> tsc -p tsconfig.json
+
+TAP version 13
+# Subtest: Fragile app passes every baseline and fails exactly the recommendation country/ASN scenarios
+ok 1 - Fragile app passes every baseline and fails exactly the recommendation country/ASN scenarios
+  ---
+  duration_ms: 10009.687242
+  type: 'test'
+  ...
+# Subtest: The fixed application passes all eight journey/scenario pairs with real requests aborted
+ok 2 - The fixed application passes all eight journey/scenario pairs with real requests aborted
+  ---
+  duration_ms: 0.196741
+  type: 'test'
+  ...
+# Subtest: Browser response IPs are real loopback addresses, not substituted geographic fixtures
+ok 3 - Browser response IPs are real loopback addresses, not substituted geographic fixtures
+  ---
+  duration_ms: 0.2231
+  type: 'test'
+  ...
+# Subtest: Aborted requests do not reach the actual dependency servers
+ok 4 - Aborted requests do not reach the actual dependency servers
+  ---
+  duration_ms: 0.167888
+  type: 'test'
+  ...
+# Subtest: All attempts produce PNG evidence and valid machine-readable reports
+ok 5 - All attempts produce PNG evidence and valid machine-readable reports
+  ---
+  duration_ms: 11.200776
+  type: 'test'
+  ...
+# Subtest: Report controls work offline and layout does not overflow on desktop or mobile
+ok 6 - Report controls work offline and layout does not overflow on desktop or mobile
+  ---
+  duration_ms: 620.002483
+  type: 'test'
+  ...
+# Subtest: A failing baseline stops every scenario, skips later steps and returns inconclusive
+ok 7 - A failing baseline stops every scenario, skips later steps and returns inconclusive
+  ---
+  duration_ms: 334.413428
+  type: 'test'
+  ...
+# Subtest: A hanging step is bounded by its deadline and returns an inspectable baseline failure
+ok 8 - A hanging step is bounded by its deadline and returns an inspectable baseline failure
+  ---
+  duration_ms: 412.631227
+  type: 'test'
+  ...
+# Subtest: Live mode skips private IPs and does not claim complete coverage
+ok 9 - Live mode skips private IPs and does not claim complete coverage
+  ---
+  duration_ms: 651.687043
+  type: 'test'
+  ...
+# Subtest: A scenario cap leaves an otherwise passing run explicitly incomplete
+ok 10 - A scenario cap leaves an otherwise passing run explicitly incomplete
+  ---
+  duration_ms: 1052.052097
+  type: 'test'
+  ...
+# Subtest: Each attempt uses a fresh context without inheriting cookies
+ok 11 - Each attempt uses a fresh context without inheriting cookies
+  ---
+  duration_ms: 776.407654
+  type: 'test'
+  ...
+# Subtest: A target that disappears in a scenario cannot be mislabeled as a passing failure test
+ok 12 - A target that disappears in a scenario cannot be mislabeled as a passing failure test
+  ---
+  duration_ms: 558.085516
+  type: 'test'
+  ...
+# Subtest: Cancellation writes a partial report instead of reporting success
+ok 13 - Cancellation writes a partial report instead of reporting success
+  ---
+  duration_ms: 340.623857
+  type: 'test'
+  ...
+# Subtest: Screenshot opt-out and diagnostics opt-out are honored
+ok 14 - Screenshot opt-out and diagnostics opt-out are honored
+  ---
+  duration_ms: 1036.80227
+  type: 'test'
+  ...
+# Subtest: CLI starter creation is non-destructive; flags and invalid commands fail explicitly
+ok 15 - CLI starter creation is non-destructive; flags and invalid commands fail explicitly
+  ---
+  duration_ms: 1443.640973
+  type: 'test'
+  ...
+# Subtest: CLI runs a filtered scenario, resolves config-relative output paths and returns zero
+ok 16 - CLI runs a filtered scenario, resolves config-relative output paths and returns zero
+  ---
+  duration_ms: 1811.0574
+  type: 'test'
+  ...
+# Subtest: Partially bypassed target interception is inconclusive even when another target request was aborted
+ok 17 - Partially bypassed target interception is inconclusive even when another target request was aborted
+  ---
+  duration_ms: 620.901686
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19960.548884

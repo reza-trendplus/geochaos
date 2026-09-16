@@ -1,0 +1,33 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run site:build
+      - run: npx playwright-core install --with-deps chromium
+      - run: npm run check
+      - name: Verify the complete ordinary-navigation demo
+        run: npm run demo
+      - name: Preserve synthetic demo evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geochaos-synthetic-demo
+          path: geochaos-reports/demo
+          if-no-files-found: ignore
+          retention-days: 7
