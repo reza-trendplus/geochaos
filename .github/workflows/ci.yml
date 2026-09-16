@@ -25,7 +25,7 @@ jobs:
         run: npm run demo
       - name: Preserve synthetic demo evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: geochaos-synthetic-demo
           path: geochaos-reports/demo
