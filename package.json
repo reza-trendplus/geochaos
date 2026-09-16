@@ -42,7 +42,7 @@
     "release:check": "node scripts/release-check.mjs"
   },
   "dependencies": {
-    "playwright-core": "1.57.0"
+    "playwright-core": "1.63.0"
   },
   "devDependencies": {
     "@types/node": "22.15.33",
